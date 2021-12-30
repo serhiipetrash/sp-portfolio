@@ -47,7 +47,7 @@
           <a class="navbar-item" href="#portfolio">Portfolio</a>
           <a
             class="navbar-item"
-            href="/dev/CV_SerhiiPetrash_JFD_EN.pdf"
+            href="/dev/CV_SerhiiPetrash_JFD_ENv2.pdf"
             target="_blank"
             ><strong>Load CV</strong></a
           >
@@ -78,7 +78,7 @@
 
             <div class="column">
               <p><b>Position: </b><span> Junior Front-end Developer</span></p>
-              <p><b>Experience: </b><span> 3+ years</span></p>
+              <p><b>Experience: </b><span> 2+ years</span></p>
               <p><b>Salary expectations: </b><span> 500+.$</span></p>
               <p><b>City:</b><span> Remote location</span></p>
               <p>
@@ -1020,7 +1020,7 @@
         const $navbarBurgers = Array.prototype.slice.call(
           document.querySelectorAll('.navbar-burger'),
           0
-        )
+        );
 
         // Check if there are any navbar burgers
         if ($navbarBurgers.length > 0) {
@@ -1028,16 +1028,16 @@
           $navbarBurgers.forEach((el) => {
             el.addEventListener('click', () => {
               // Get the target from the "data-target" attribute
-              const target = el.dataset.target
-              const $target = document.getElementById(target)
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
 
               // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-              el.classList.toggle('is-active')
-              $target.classList.toggle('is-active')
-            })
-          })
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+            });
+          });
         }
-      })
+      });
     </script>
   </body>
 </html>
